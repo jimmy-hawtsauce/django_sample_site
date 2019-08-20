@@ -1,3 +1,4 @@
+{% load static %}
 <!doctype html>
 <html lang="en">
 <head>
@@ -11,9 +12,12 @@
         <title>Django Sample</title>
     {% endif %}
     <!-- load css later and bootstrap -->
+    <link rel="stylesheet" href="{% static 'blog/main.css' %}">
 </head>
 <body>
-{% block content %}{% endblock %}
+<div class="container">
+    {% block content %}{% endblock %}
+</div>
 
 <!-- load scripts later -->
 </body>

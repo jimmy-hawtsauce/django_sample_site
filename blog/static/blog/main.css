@@ -1,0 +1,19 @@
+div.container {
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+div.blog-home-post div.header h2 {
+    display: inline;
+    margin-right: 10%;
+}
+
+div.blog-home-post div.header, div.blog-home-post p {
+    padding: 1%;
+}
+
+div.blog-home-post {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}

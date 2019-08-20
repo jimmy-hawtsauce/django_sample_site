@@ -1,8 +1,14 @@
 from django.shortcuts import render
 
+from .models import Post
+
 
 def home(request):
-    return render(request, 'blog/home.html', context={'title': 'Blog Home'})
+    context = {
+        'title': 'Blog Home',
+        'posts': Post.objects.all()
+    }
+    return render(request, 'blog/home.html', context)
 
 
 def about(request):
